@@ -1,13 +1,16 @@
-import React, { Component } from 'react'
-import './App.css'
+import React, { Component } from "react";
+import "./App.css";
+import Header from "./Components/Header.js";
+import Box from "./Components/Box.js";
 
-class App extends Component{
-  render(){
-    return(
+class App extends Component {
+  render() {
+    return (
       <>
-        <h1>Hello World!</h1>
+        <Header />
+        <Box />
       </>
-    )
+    );
   }
 }
-export default App
+export default App;
