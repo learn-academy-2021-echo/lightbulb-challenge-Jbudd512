@@ -1,9 +1,6 @@
-#box {
-  width: 200px;
-  height: 200px;
-  border: 2px black solid;
-  font-size: 32px;
-  justify-content: center;
+#bulbBox {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
