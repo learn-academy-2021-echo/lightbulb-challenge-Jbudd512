@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import Bulb from "./Bulb.js";
+import "./Box.css";
 class Box extends Component {
   constructor(props) {
     super(props);
@@ -16,6 +18,7 @@ class Box extends Component {
   render() {
     return (
       <>
+        <Bulb color={this.state.color} />
         <div
           id="box"
           onClick={this.toggle}
