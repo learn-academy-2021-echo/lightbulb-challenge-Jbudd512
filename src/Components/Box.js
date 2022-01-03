@@ -12,19 +12,17 @@ class Box extends Component {
   toggle = () => {
     this.state.offOn === "on"
       ? this.setState({ offOn: "off", color: "white" })
-      : this.setState({ offOn: "on", color: "yellow" });
+      : this.setState({ offOn: "on", color: "hsl(60, 100%, 50%)" });
   };
 
   render() {
     return (
       <>
-        <Bulb color={this.state.color} />
-        <div
-          id="box"
-          onClick={this.toggle}
-          style={{ background: this.state.color }}
-        >
-          {this.state.offOn}
+        <div id="box-bulb">
+          <Bulb color={this.state.color} />
+          <div id="box" onClick={this.toggle}>
+            {this.state.offOn}
+          </div>
         </div>
       </>
     );
